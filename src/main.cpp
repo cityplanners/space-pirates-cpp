@@ -3,6 +3,6 @@
 
 int main(int argc, char** argv)
 {
-    Bones::PrintHelloWorld();
+    Bones::InitWindow();
     return 0;
 }
