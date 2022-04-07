@@ -1,8 +1,18 @@
-cmake_policy(SET CMP0048 NEW)
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.10)
 
-project(SpacePirates_dev_env VERSION 1.1.0 LANGUAGES CXX)
+project(SpacePirates VERSION 0.0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory(space-pirates)
+find_package(glm)
+find_package(glfw)
+
+add_subdirectory(external/bones-engine)
+
+add_executable(${PROJECT_NAME} src/main.cpp)
+
+target_link_libraries(${PROJECT_NAME} bones)
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        bones
+)
