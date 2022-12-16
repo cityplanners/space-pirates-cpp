@@ -12,7 +12,7 @@ void SpacePirates::run(){
 void SpacePirates::init(){
     window = new Window();
 
-    window->InitWindow();
+    window->initWindow();
 
 }
 
@@ -21,10 +21,10 @@ void SpacePirates::initVulkan(){
 }
 
 void SpacePirates::mainLoop(){
-    window->MainLoop();
+    window->mainLoop();
 }
 
 void SpacePirates::cleanup(){
-    window->Cleanup();
+    window->cleanup();
     delete window;
 }
