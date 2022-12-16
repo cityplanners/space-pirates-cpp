@@ -1,3 +1,5 @@
 [submodule "external/bones-engine"]
 	path = external/bones-engine
 	url = https://github.com/cityplanners/bones-engine.git
+[submodule "bones-engine"]
+	branch = main
