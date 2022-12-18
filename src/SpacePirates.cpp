@@ -17,7 +17,7 @@ void SpacePirates::init(){
 }
 
 void SpacePirates::initVulkan(){
-
+    window->initVulkan();
 }
 
 void SpacePirates::mainLoop(){
